@@ -341,7 +341,7 @@
 /datum/class_age_mod/archivist
 	target_age = AGE_OLD
 	skill_mods = list(
-		/datum/skill/magic/arcane = SKILL_LEVEL_JOURNEYMAN
+		/datum/skill/magic/arcane = SKILL_LEVEL_MASTER
 	)
 	stat_mods = list(
 		STATKEY_INT = 1,
@@ -370,14 +370,14 @@
 /datum/class_age_mod/court_magician
 	target_age = AGE_OLD
 	skill_mods = list(
-		/datum/skill/magic/arcane = SKILL_LEVEL_LEGENDARY
+		/datum/skill/craft/alchemy = SKILL_LEVEL_LEGENDARY
 	)
 	stat_mods = list(
-		STATKEY_PER = 1,
+		STATKEY_PER = -1,
 		STATKEY_INT = 1,
 		STATKEY_SPD = -1
 	)
-	sp_mod = 6
+	sp_mod = 12
 
 /datum/class_age_mod/court_physician
 	target_age = AGE_OLD
@@ -388,4 +388,35 @@
 		STATKEY_PER = 1,
 		STATKEY_INT = 1,
 		STATKEY_SPD = -1
+	)
+
+/datum/class_age_mod/knight/heavy
+	target_age = AGE_OLD
+	stat_mods = list(
+		STATKEY_STR = 1,
+		STATKEY_INT = -2, //you have football player brain bro
+		STATKEY_CON = 1,
+		STATKEY_FOR = 1
+	)
+
+/datum/class_age_mod/knight/footknight
+	target_age = AGE_OLD
+	skill_mods = list (
+		/datum/skill/combat/shields = SKILL_LEVEL_MASTER
+	)
+	stat_mods = list(
+		STATKEY_INT = -1, //you have football player brain bro
+		STATKEY_CON = 2, //subclass' identity so maybe?
+		STATKEY_FOR = 1 //not touching spd for now? since you're already at like -4 overall by being old and a knight
+	)
+
+/datum/class_age_mod/knight/mountedknight
+	target_age = AGE_OLD
+	skill_mods = list (
+		/datum/skill/misc/riding = SKILL_LEVEL_MASTER,
+	)
+	stat_mods = list(
+		STATKEY_STR = 1,
+		STATKEY_SPD = -2, //get on your wheelchairhorse old man
+		STATKEY_FOR = 1
 	)

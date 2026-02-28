@@ -84,6 +84,7 @@
 		STATKEY_WIL = 2,
 		STATKEY_SPD = -2,
 	)
+	age_mod = /datum/class_age_mod/knight/heavy
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_EXPERT, //Polearms are pretty much explicitly a two-handed weapon, so I gave them a polearm option.
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
@@ -161,6 +162,7 @@
 		STATKEY_PER = 1,
 		STATKEY_SPD = -2,
 	)
+	age_mod = /datum/class_age_mod/knight/footknight
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT,
@@ -234,6 +236,7 @@
 		STATKEY_PER = 2,
 		STATKEY_SPD = -1,
 	)
+	age_mod = /datum/class_age_mod/knight/mountedknight
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
